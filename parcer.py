@@ -14,6 +14,7 @@ def parce_page(url, headers, cursor, existing_tasks):
     page = requests.get(url, headers)
     soup = BeautifulSoup(page.content, "html.parser")
     tr = soup.find('table').findAll('tr')
+
     for line in tr[1:]:
         task = Task()
         table_line = line.findAll("td")
