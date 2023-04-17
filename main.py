@@ -4,6 +4,7 @@ from parcer import *
 from connection_to_db import Database
 import datetime
 
+
 from threading import Thread
 import asyncio
 
